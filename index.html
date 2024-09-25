@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Prediction</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Breast Cancer Prediction</h1>
+    <img src="https://via.placeholder.com/150" alt="Benign and Malignant">
+    <form method="post" action="/predict">
+        <!-- Form inputs -->
+        <!-- Labels and input fields -->
+        <!-- Submit button -->
+    </form>
+    {% if prediction is defined %}
+        <p>Prediction: {{ prediction }}</p>
+    {% endif %}
+</body>
+</html>
